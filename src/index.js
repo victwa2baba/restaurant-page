@@ -16,6 +16,11 @@ import egusi from "./img/egusi.jpg";
 import banga from "./img/banga.jpg";
 import rice from "./img/rice.jpeg";
 
+if (process.env.NODE_ENV !== 'production') {
+   console.log('Looks like we are in development mode!');
+ }
+
+
 const  bgImage = new Image();
 bgImage.src = image;
 const bgImage2 = new Image();
